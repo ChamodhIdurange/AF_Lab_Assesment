@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Creating a simple shopping cart without any DB",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon server.js"
   },
@@ -20,6 +21,7 @@
     "@koa/router": "^10.1.1",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "uuid": "^8.3.2"
   }
 }
