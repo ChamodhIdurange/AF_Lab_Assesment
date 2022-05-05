@@ -5,6 +5,7 @@ import userRouter from "./routes/user.router.js";
 import traderRouter from "./routes/trader.router.js";
 import itemRouter from "./routes/items.router.js";
 import cartRouter from "./routes/cart.router.js";
+import wishListRouter from "./routes/wishlist.router.js";
 
 const app = new Koa();
 
@@ -18,6 +19,8 @@ app.use(itemRouter.routes());
 app.use(itemRouter.allowedMethods());
 app.use(cartRouter.routes());
 app.use(cartRouter.allowedMethods());
+app.use(wishListRouter.routes());
+app.use(wishListRouter.allowedMethods());
 
 app.use((ctx) => {
   ctx.status = 404;
