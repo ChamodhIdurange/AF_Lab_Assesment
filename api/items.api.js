@@ -18,13 +18,20 @@ export const createItem = (data) => {
 };
 
 export const getItemsById = (id) => {
-    const item = items.get(id);
-    if (!item) {
-      throw new Error("item not found");
-    }
-    return item;
-  };
+  const item = items.get(id);
+  if (!item) {
+    throw new Error("item not found");
+  }
+  return item;
+};
 
 export const getAllItems = () => {
   return [...items.values()];
+};
+
+export const updateItem = (id, data) => {
+  console.log(data);
+  console.log("data");
+  items.set(id, data);
+  return items;
 };

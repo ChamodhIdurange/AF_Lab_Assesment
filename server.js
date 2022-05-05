@@ -4,7 +4,7 @@ import koaBodyparser from "koa-bodyparser";
 import userRouter from "./routes/user.router.js";
 import traderRouter from "./routes/trader.router.js";
 import itemRouter from "./routes/items.router.js";
-
+import cartRouter from "./routes/cart.router.js";
 
 const app = new Koa();
 
@@ -16,6 +16,8 @@ app.use(traderRouter.routes());
 app.use(traderRouter.allowedMethods());
 app.use(itemRouter.routes());
 app.use(itemRouter.allowedMethods());
+app.use(cartRouter.routes());
+app.use(cartRouter.allowedMethods());
 
 app.use((ctx) => {
   ctx.status = 404;
