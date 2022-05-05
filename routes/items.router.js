@@ -13,6 +13,11 @@ const itemRouter = new Router({
 itemRouter.post("/", (ctx) => {
   let data = ctx.request.body;
   data = createItem(data);
+  if (!data) {
+    throw new Error("Item not added");
+  } else {
+    ctx.body = data;
+  }
 });
 
 itemRouter.get("/", (ctx) => {
