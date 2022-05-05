@@ -1,0 +1,25 @@
+{
+  "name": "af_lab_assesment",
+  "version": "1.0.0",
+  "description": "Creating a simple shopping cart without any DB",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChamodhIdurange/AF_Lab_Assesment.git"
+  },
+  "author": "IT20189044",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChamodhIdurange/AF_Lab_Assesment/issues"
+  },
+  "homepage": "https://github.com/ChamodhIdurange/AF_Lab_Assesment#readme",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "nodemon": "^2.0.16"
+  }
+}
